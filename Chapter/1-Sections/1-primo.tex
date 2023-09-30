@@ -1,0 +1,148 @@
+Supponiamo di avere $n+1$ dati $(x_i,y_i)$ con $i=0,\ldots,n$
+
+$$\chi^2(\underline{a})
+=\frac{1}{n-1} \sum_{i=0}^{n} \big[ y_i - f(\underline{x}_i,\underline{a}) \big]^2\geq0$$
+
+$$\begin{cases}
+   c_0 + c_1x_0 + c_2 x_0^2 + \ldots + c_n x_0^n=y_0\\
+   c_0 + c_1x_1 + c_2 x_1^2 + \ldots + c_n x_1^n=y_1\\
+   \vdots\\
+   c_0 + c_1x_n + c_2 x_n^2 + \ldots + c_n x_n^n=y_n
+\end{cases}$$
+
+Possiamo esprimere il sistema come
+
+$$V \underline{c}=\underline{y}$$
+
+dove
+
+$$V=
+\begin{pmatrix}
+   1 & x_0 & x_0^2 & \ldots & x_0^n\\
+   1 & x_1 & x_1^2 & \ldots & x_1^n\\
+   \vdots & \vdots & \vdots & \ddots & \vdots\\
+   1 & x_n & x_n^2 & \ldots & x_n^n\\
+\end{pmatrix}
+\quad,\quad
+\underline{c}=
+\begin{pmatrix}
+   c_0\\
+   \vdots\\
+   c_n
+\end{pmatrix}
+\quad,\quad
+\underline{y}=
+\begin{pmatrix}
+   y_0\\
+   \vdots\\
+   y_n
+\end{pmatrix}$$
+
+$V$ è detta \textbf{matrice di Vandermonde}. Poiché $x_i \neq x_j \quad \forall \, i \neq j$, ogni colonna è diversa e quindi il determinante è non nullo. Per calcolarlo sottraiamo ad ogni colonna la precedente moltiplicata per $x_0$:
+
+$$\det (V)=
+\begin{pmatrix}
+   1 & x_0 - x_0 & x_0^2 - x_0^2 & \ldots & x_0^n - x_0^n\\
+   1 & x_1 - x_0 & x_1^2 - x_0x_1 & \ldots & x_1^n - x_0x_1^{n-1}\\
+   \vdots & \vdots & \vdots & \ddots & \vdots\\
+   1 & x_n - x_0 & x_n^2 - x_0x_n & \ldots & x_n^n - x_0 x_n^{n-1}\\
+\end{pmatrix}$$
+
+$$\implies \det (V)=
+\begin{pmatrix}
+   1 & 0 & 0 & \ldots & 0\\
+   1 & x_1 - x_0 & (x_1 - x_0)x_1 & \ldots & (x_1 - x_0)x_1^{n-1}\\
+   \vdots & \vdots & \vdots & \ddots & \vdots\\
+   1 & x_n - x_0 & (x_n - x_0)x_n & \ldots & (x_n - x_0)x_n^{n-1}\\
+\end{pmatrix}$$
+
+dividendo la $j$-esima riga (tranne la prima) per $x_j - x_0$ e portando fuori dalla matrice otteniamo
+
+$$\det (V)=
+\begin{pmatrix}
+   1 & 0 & 0 & \ldots & 0\\
+   1 & 1 & x_1 & \ldots & x_1^{n-1}\\
+   \vdots & \vdots & \vdots & \ddots & \vdots\\
+   1 & 1 & x_n & \ldots & x_n^{n-1}\\
+\end{pmatrix}
+\underbrace{(x_1 - x_0) \cdot \ldots \cdot (x_n - x_0)}_{\displaystyle = \prod_{j=2}^{n} (x_j - x_0)}$$
+
+La matrice risultante non dipende più da $x_0$. Reiterando il processo possiamo eliminare la dipendenza da ogni $x_i$ e in forma compatta il determinante si potrà scrivere come
+
+$$\det V=\prod_{i>j} (x_i - x_j)$$
+
+Tale espressione ci dice che se i punti sono tutti distinti il determinante della matrice è diverso da zero. Si può anche scrivere come
+
+$$\det V=\prod_{j=0}^{n-1} \qty( \prod_{i=j+1}^{n} (x_i - x_j) )$$
+
+\textbf{non ho capito come si passa a questo vabbè}
+
+$$P_n(x)=\sum_{i=0}^{n} f(x_i) L_i(x)$$
+
+dove
+
+$$L_i(x)=\prod_{\begin{subarray}{c}
+   k=0\\[0.1cm]
+   k \neq i
+\end{subarray}
+}^{n} \frac{x - x_k}{x_i - x_k}
+$$
+
+nota: essendo così definito, il denominatore è sempre diverso da zero.
+
+L'ordine di ogni polinomio $L_i$ è proprio $n$
+
+$$L_i=\frac{
+(x - x_0) (x - x_1) \ldots (x - x_{i-1}) (x - x_{i+1}) \ldots (x - x_n)
+}{
+(x_i - x_0) (x_i - x_1) \ldots (x_i - x_{i-1}) (x_i - x_{i+1}) \ldots (x_i - x_n)
+}$$
+
+Si ha che
+
+$$L_i(x_j)=
+\left\{
+   \begin{array}{ll}
+      0 & \text{se } j \neq i\\
+      1 & \text{se } j = i
+   \end{array}
+\right.
+\equiv \delta_{ij}$$
+
+infatti nel primo caso a numeratore ci sarà un termine nullo, nel secondo caso numeratore e denominatore saranno uguali.
+
+In definitiva abbiamo che
+
+$$P_n(x_j)=\sum_{i=0}^{n} f(x_i) L_i(x_j)
+=\sum_{i=0}^{n} f(x_i) \delta_{ij}
+=f(x_j) \quad \forall \, j$$
+
+\subsection{Formula di Newton per il polinomio interpolante}
+
+Tale metodo si adopera quando abbiamo trovato la soluzione per $n$ punti e ne includiamo un altro. Supposto quindi di avere il polinomio $P_{n-1}(x)$ che passa per $x_0,x_1,\ldots,x_{n-1}$, poniamo
+
+$$P_n(x)=P_{n-1}(x) + a_n w_{n-1}(x)$$
+
+dove
+
+$$w_{n-1}(x)=\prod_{i=0}^{n-1} (x - x_i)
+\quad,\quad
+a_n=\frac{f(x_n) - P_{n-1}(x_n)}{w_{n-1}(x_n)}$$
+
+$w_{n-1}$ è un \textit{polinomio monico}, cioè un polinomio tale che il coefficiente del termine di grado massimo è pari a 1. Inoltre ha grado $n$.
+
+\vspace{0.2cm}Proviamo innanzitutto che il nuovo polinomio passa per i primi $n-1$ punti.
+
+Posto $k \leq n-1$ si ha
+
+$$w_{n-1}(x_k)=0$$
+$$P_n(x_k)=P_{n-1}(x_k) + a_n \underbrace{w_{n-1}(x_k)}_{=0}
+=P_{n-1}(x_k)
+\equiv f(x_k)$$
+
+Proviamo adesso che passa per il nuovo punto:
+
+$$P_n(x_n)=P_{n-1}(x_n) + a_n w_{n-1}(x_n)
+=P_{n-1}(x_n) + \frac{f(x_n) - P_{n-1}(x_n)}{w_{n-1}(x_n)} w_{n-1}(x_n)=$$
+$$=P_{n-1}(x_n) + f(x_n) - P_{n-1}(x_n)
+=f(x_n) $$
