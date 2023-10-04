@@ -1,13 +1,61 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {section}{\numberline {1}Approssimazione e interpolazione di funzioni}{5}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Regressione}{5}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Formula di Newton per il polinomio interpolante}{7}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Errore nell'estrapolazione}{8}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Prodotto scalare (prodotto hermitiano)}{9}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Polinomi di Legendre}{9}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Sviluppo in multipolo}{10}{subsubsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.3}Funzione generatrice per polinomi ortonormali}{11}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Formule ricorsive}{12}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Approssimazione di integrali}{13}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Il modello di Ising}{14}{subsection.2.6}%
+\contentsline {section}{\numberline {1}Approssimazione e interpolazione di funzioni}{7}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Regressione}{7}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Formula di Newton per il polinomio interpolante}{9}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Errore nell'estrapolazione}{10}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Prodotto scalare (prodotto hermitiano)}{11}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Polinomi di Legendre}{11}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Sviluppo in multipolo}{12}{subsubsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.3}Funzione generatrice per polinomi ortonormali}{13}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Formule ricorsive}{14}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Approssimazione di integrali}{15}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Il modello di Ising}{16}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Best fit}{16}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Taylor expantion}{17}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Weierstrass approximation theorem}{17}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Interpolating polynomials}{17}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Vandermond Matrix}{18}{section.5}%
+\contentsline {section}{\numberline {6}Lagrange Form}{19}{section.6}%
+\contentsline {section}{\numberline {7}Newton form}{19}{section.7}%
+\contentsline {section}{\numberline {8}Shamir's secret Shary}{20}{section.8}%
+\contentsline {section}{\numberline {9}Point error in Lagrange interpolation}{20}{section.9}%
+\contentsline {section}{\numberline {10}Runge Phenomenon}{21}{section.10}%
+\contentsline {section}{\numberline {11}Othogonal polynomials (or orthonormal)}{21}{section.11}%
+\contentsline {section}{\numberline {12}Gram-Schmidt}{22}{section.12}%
+\contentsline {section}{\numberline {13}Legendre Polynomials}{22}{section.13}%
+\contentsline {section}{\numberline {14}Multipole expansion}{23}{section.14}%
+\contentsline {section}{\numberline {15}Generaty function}{24}{section.15}%
+\contentsline {section}{\numberline {16}Funzione generatrice dei polinomi di Legendre}{25}{section.16}%
+\contentsline {section}{\numberline {17}Rodriguez formula}{25}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Qualcosa sui multipoli}{25}{subsection.17.1}%
+\contentsline {section}{\numberline {18}Prima formula ricorsiva}{25}{section.18}%
+\contentsline {section}{\numberline {19}seconda formula ricorsiva}{25}{section.19}%
+\contentsline {section}{\numberline {20}Legendre differencial equation}{26}{section.20}%
+\contentsline {section}{\numberline {21}Sturm-Liouville problem}{26}{section.21}%
+\contentsline {section}{\numberline {22}Numerical integration}{26}{section.22}%
+\contentsline {section}{\numberline {23}Newton Cotes Formula}{27}{section.23}%
+\contentsline {section}{\numberline {24}Midpoint rule}{27}{section.24}%
+\contentsline {section}{\numberline {25}Ernest I sing}{27}{section.25}%
+\contentsline {section}{\numberline {26}Metodo montecarlo}{28}{section.26}%
+\contentsline {section}{\numberline {27}Metodo Buffon}{28}{section.27}%
+\contentsline {section}{\numberline {28}altri esempi del metodo montecarlo}{29}{section.28}%
+\contentsline {section}{\numberline {29}importance sampling}{29}{section.29}%
+\contentsline {section}{\numberline {30}Root finding}{29}{section.30}%
+\contentsline {section}{\numberline {31}Algoritmo di bisezione}{30}{section.31}%
+\contentsline {section}{\numberline {32}Metodo della secante}{31}{section.32}%
+\contentsline {section}{\numberline {33}Algoritmo babilonese}{31}{section.33}%
+\contentsline {section}{\numberline {34}equazioni di Volterra}{32}{section.34}%
+\contentsline {section}{\numberline {35}Picard sequence}{32}{section.35}%
+\contentsline {section}{\numberline {36}Lemma di Gronwall}{32}{section.36}%
+\contentsline {section}{\numberline {37}Metodo di Eulero}{33}{section.37}%
+\contentsline {section}{\numberline {38}Bowie}{33}{section.38}%
+\contentsline {section}{\numberline {39}Rappresentazione integrale della funzione fattoriale}{33}{section.39}%
+\contentsline {subsection}{\numberline {39.1}Suddle point approximation}{34}{subsection.39.1}%
+\contentsline {section}{\numberline {40}P norma}{34}{section.40}%
+\contentsline {subsection}{\numberline {40.1}Norma matriciale (matrci quadrate)}{34}{subsection.40.1}%
+\contentsline {subsection}{\numberline {40.2}Norma subordinata di una matrice}{34}{subsection.40.2}%
+\contentsline {section}{\numberline {41}LU method}{35}{section.41}%
+\contentsline {section}{\numberline {42}Elementary trasformation matrix}{35}{section.42}%
+\contentsline {section}{\numberline {43}Gauss Jordan}{35}{section.43}%
+\contentsline {section}{\numberline {44}solutions of partial differential equation}{36}{section.44}%
